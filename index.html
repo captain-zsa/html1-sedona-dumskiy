@@ -14,7 +14,7 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="#">Главная</a>
+          <a class="navigation-link navigation-link-current">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О седоне</a>
@@ -44,8 +44,7 @@
   <main class="main-index">
     <section class="hero">
       <h1 class="vissually-hidden">Седона - городок в Аризоне</h1>
-      <img class="hero-img hero-img-bg" src="#" alt="Гранд Каньон">
-      <img class="hero-img hero-img-banner" src="#" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon lucks!">
+      <img class="hero-img hero-img" src="#" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon lucks!">
     </section>
     <section class="advantages">
       <h2 class="vissually-hidden">Преимущества</h2>
@@ -99,16 +98,16 @@
       <h2 class="vissually-hidden">Найти гостиницу</h2>
       <p class="tagline">Заинтересовались?</p>
       <p class="appeal">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="search-hotel-btn" type="button">поиск гостиницы в седоне</button>
+      <a class="search-hotel-btn" href="catalog.html">поиск гостиницы в седоне</a>
     </section>
     <section class="subscribe">
       <h2 class="vissually-hidden">Хотите быть в курсе последних новостей?</h2>
       <p class="tagline">Подпишитесь на рассылку</p>
       <p class="appeal">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="subscribe-form-email">
+        <p class="subscribe-email">
           <label class="vissually-hidden" for="user-email">Укажите ваш e-mail</label>
-          <input id="user-email" type="email" placeholder="Ваш e-mail">
+          <input id="user-email" type="email" placeholder="Ваш e-mail" required>
         </p>
         <button class="subscribe-btn" type="submit">подписаться</button>
       </form>
@@ -134,10 +133,8 @@
         </a>
       </li>
     </ul>
-    <h3 class="vissually-hidden">Телефон для связи</h3>
-    <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <h3 class="vissually-hidden">Сайт разработчика данного сайта</h3>
-    <a class="developer" href="https://htmlacademy.ru/">
+    <a class="footer-phone" href="tel:+78128121212" aria-label="Телефон для связи">+7 (812) 812-12-12</a>
+    <a class="developer" href="https://htmlacademy.ru/" aria-label="Сайт разработчика данного сайта">
       <img class="logo-htmlacademy" src="#" alt="Логотип HTML Academy">
     </a>
   </footer>
