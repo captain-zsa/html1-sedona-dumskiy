@@ -10,29 +10,29 @@
 <body>
   <div class="wrapper">
     <header class="page-header">
-      <a aria-current="page">
+      <a href="index.html" aria-current="page">
         <img class="logo" src="images/logo.png" width="140" height="70" alt="Логотип City of Sedona">
       </a>
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list clear-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link none-decoration" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О седоне</a>
+            <a class="navigation-link none-decoration" href="#">О седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Гостиницы</a>
+            <a class="navigation-link navigation-link-current none-decoration">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-user-list">
+        <ul class="navigation-user-list clear-list">
           <li class="navigation-user-item">
             <button class="navigation-user-btn navigation-user-btn-search" type="button">
               <span class="visually-hidden">Поиск</span>
             </button>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+            <a class="navigation-user-link none-decoration" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="notification-badge">12</span>
             </a>
@@ -46,21 +46,21 @@
     <main class="main-inner">
       <section class="filters">
         <h1 class="filters-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs clear-list">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
+            <a class="breadcrumbs-link none-decoration" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link none-decoration">Гостиницы</a>
           </li>
         </ul>
         <h2 class="visually-hidden">Фильтры товаров</h2>
         <form class="filters-groups" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filters-group">
-            <legend class="filters-title">Инфраструктура:</legend>
-            <ul class="filters-group-list">
+            <legend class="filters-group-title">Инфраструктура:</legend>
+            <ul class="filters-group-list clear-list">
               <li class="filters-group-item">
                 <label class="filters-group-control">
                   <input class="filters-group-control-input" type="checkbox" name="pool" checked>
@@ -82,8 +82,8 @@
             </ul>
           </fieldset>
           <fieldset class="filters-group">
-            <legend class="filters-title">Тип жилья:</legend>
-            <ul class="filters-group-list">
+            <legend class="filters-group-title">Тип жилья:</legend>
+            <ul class="filters-group-list clear-list">
               <li class="filters-group-item">
                 <label class="filters-group-control">
                   <input class="filters-group-control-input" type="radio" name="housing-group" value="hotel" checked>
@@ -105,8 +105,8 @@
             </ul>
           </fieldset>
           <fieldset class="filters-group">
-            <legend class="filters-title">Стоимость, ₽:</legend>
-            <ul class="filters-group-price-list">
+            <legend class="filters-group-title">Стоимость, ₽:</legend>
+            <ul class="filters-group-price-list clear-list">
               <li class="filters-group-price-item">
                 <input class="filters-group-price-input" type="number" name="price-min" placeholder="от">
               </li>
@@ -127,7 +127,7 @@
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <ul class="view-mode" aria-label="Изменить отображение на странице">
+        <ul class="view-mode clear-list" aria-label="Изменить отображение на странице">
           <li class="view-mode-item">
             <a class="view-mode-btn view-mode-btn-small-card" href="#">
               <span class="visually-hidden">Показать маленькие карточки</span>
@@ -144,7 +144,7 @@
             </a>
           </li>
         </ul>
-        <ul class="product-cards">
+        <ul class="product-cards clear-list">
           <li class="product-cards-item">
             <a class="product-cards-link" href="#">
               <img class="product-cards-img" src="images/starry-sky.jpg" width="300" height="212" alt="Звездное небо">
@@ -152,7 +152,7 @@
             </a>
             <span class="product-cards-housing">Гостиница</span>
             <span class="product-cards-price">От 4000 ₽</span>
-            <a class="product-cards-btn product-cards-btn-more" href="#">Подробнее</a>
+            <a class="product-cards-btn product-cards-btn-more none-decoration" href="#">Подробнее</a>
             <button class="product-cards-btn product-cards-btn-favorites" type="button">В избранное</button>
             <p class="product-cards-stars visually-hidden">
               Количество звезд
@@ -170,7 +170,7 @@
             </a>
             <span class="product-cards-housing">Гостиница</span>
             <span class="product-cards-price">От 5000 ₽</span>
-            <a class="product-cards-btn product-cards-btn-more" href="#">Подробнее</a>
+            <a class="product-cards-btn product-cards-btn-more none-decoration" href="#">Подробнее</a>
             <button class="product-cards-btn product-cards-btn-favorites" type="button">В избранное</button>
             <p class="product-cards-stars visually-hidden">
               Количество звезд
@@ -188,7 +188,7 @@
             </a>
             <span class="product-cards-housing">Гостиница</span>
             <span class="product-cards-price">От 2500 ₽</span>
-            <a class="product-cards-btn product-cards-btn-more" href="#">Подробнее</a>
+            <a class="product-cards-btn product-cards-btn-more none-decoration" href="#">Подробнее</a>
             <button class="product-cards-btn product-cards-btn-favorites" type="button">В избранное</button>
             <p class="product-cards-stars visually-hidden">
               Количество звезд
@@ -206,7 +206,7 @@
             </a>
             <span class="product-cards-housing">Гостиница</span>
             <span class="product-cards-price">От 1500 ₽</span>
-            <a class="product-cards-btn product-cards-btn-more" href="#">Подробнее</a>
+            <a class="product-cards-btn product-cards-btn-more none-decoration" href="#">Подробнее</a>
             <button class="product-cards-btn product-cards-btn-favorites" type="button">В избранное</button>
             <p class="product-cards-stars visually-hidden">
               Количество звезд
@@ -218,7 +218,7 @@
             </p>
           </li>
         </ul>
-        <ul class="pagination">
+        <ul class="pagination clear-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -254,7 +254,7 @@
     <footer class="page-footer">
       <h2 class="visually-hidden">Контактная иформация</h2>
       <h3 class="visually-hidden">Мы в социальных сетях</h3>
-      <ul class="footer-socials-list">
+      <ul class="footer-socials-list clear-list">
         <li class="footer-socials-item">
           <a class="footer-socials-link" href="#">
             <span class="visually-hidden">ВКонтакте</span>

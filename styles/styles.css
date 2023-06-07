@@ -28,7 +28,7 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
@@ -41,24 +41,32 @@ body {
   background-color: #ffffff;
 }
 
-.navigation ul {
+.clear-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.navigation a {
+.none-decoration {
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+.navigation {
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
+}
+
+.navigation-link {
+  color: #000000;
 }
 
 .notification-badge {
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
-  text-align: center;
   color: #ffffff;
   background-color: #7DB54F;
 }
@@ -70,21 +78,21 @@ body {
 .navigation-user-btn-want {
   background-color: #756157;
   color: #ffffff;
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
 }
 
+/* HERO */
 .hero {
-  width: 1200px;
-  height: 485px;
   background: #000000 url("../images/hero-background.jpg") no-repeat center center;
 }
 
-.advantages ul {
-  list-style-type: none;
+/* ADVANTAGES */
+.advantages {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .tagline {
@@ -101,46 +109,38 @@ body {
 }
 
 .advantages-item {
-  background-color: #82B3D3;
-}
-
-.advantages-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff
-}
-
-.advantages-descr {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #ffffff
-}
-
-.advantages-item-light-blue {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-blue {
+  background-color: #82B3D3;
 }
 
 .advantages-item-sky-color {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item-light-blue .advantages-title,
-.advantages-item-sky-color .advantages-title{
-  color: #000000;
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
-.advantages-item-light-blue .advantages-descr,
-.advantages-item-sky-color .advantages-descr{
+.advantages-descr {
   color: #333333;
 }
 
-.infrastructure ul {
-  list-style-type: none;
+.advantages-item-blue .advantages-title,
+.advantages-item-blue .advantages-descr {
+  color: #ffffff;
+}
+
+/* INFRASTRUCTURE */
+.infrastructure {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
 }
 
 .infrastructure-item-sky-color {
@@ -151,18 +151,14 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .infrastructure-descr {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
   color: #333333;
 }
 
+/* SEARCH-HOTEL */
 .search-hotel-btn {
   background-color: #756157;
   font-weight: 700;
@@ -174,14 +170,13 @@ body {
   text-decoration: none;
 }
 
-.main-index .subscribe {
-  width: 1200px;
-  height: 415px;
+/* SUBSCRIBE */
+.subscribe-main {
   background: #000000 url("../images/subscribe-background.jpg") no-repeat center center;
 }
 
-.main-index .subscribe .tagline,
-.main-index .subscribe .appeal {
+.tagline-white,
+.appeal-white {
   color: #FFFFFF;
 }
 
@@ -201,10 +196,7 @@ body {
   text-transform: uppercase;
 }
 
-.page-footer ul {
-  list-style-type: none;
-}
-
+/* FOOTER */
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
@@ -214,44 +206,41 @@ body {
   color: #000000;
 }
 
+/* FILTERS */
 .filters {
-  width: 1200px;
-  height: 412;
   background: #000000 url("../images/filters-background.jpg") no-repeat center center;
   color: #ffffff;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
 }
 
 .filters-title {
-  font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
 
-.filters ul {
-  list-style-type: none;
-}
-
 .breadcrumbs-link {
+  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  text-decoration: none;
-  color: inherit;
 }
 
-.filters-title {
-  font-weight: 700;
+.filters-group {
+  border: none;
+}
+
+.filters-group-title {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
 }
 
 .filters-group-control {
-  font-size: 18px;
-  line-height: 23px;
+  font-weight: 400;
 }
 
 .filters-btn {
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -264,75 +253,62 @@ body {
   background: transparent;
 }
 
+/* CATALOG */
+.catalog {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
 .catalog-title,
 .catalog-result {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.catalog ul {
-  list-style-type: none;
-}
-
 .product-cards-link {
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-decoration: none;
   color: #000000;
 }
 
-.product-cards-housing {
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-}
-
+.product-cards-housing,
 .product-cards-price {
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  text-align: right;
-}
-
-.product-cards-btn-more,
-.product-cards-btn-favorites,
-.product-cards-rating {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .product-cards-btn-more {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
   background-color: #756157;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .product-cards-btn-favorites {
+  font-weight: 700;
   background-color: #82B3D3;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .product-cards-rating {
   background-color: #F2F2F2;
-  /* background-color: #000000; */
   color: #333333;
+  text-transform: uppercase;
 }
 
+/* PAGINATION */
 .pagination-link {
   background-color: #82B3D3;
   color: #ffffff;
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
   text-decoration: none;
 }
 
