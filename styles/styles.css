@@ -44,16 +44,20 @@ body {
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-}
-
-button {
+.clear-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .button {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
   background-color: #756157;
   color: #ffffff;
   font-weight: 700;
@@ -78,10 +82,23 @@ button {
   background: transparent;
 }
 
-.clear-list {
-  list-style-type: none;
+.tagline {
   margin: 0;
-  padding: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.appeal {
+  text-align: center;
+  color: #333333;
+}
+
+.tagline-white,
+.appeal-white {
+  color: #FFFFFF;
 }
 
 .page-container {
@@ -157,19 +174,6 @@ button {
   line-height: 21px;
 }
 
-.tagline {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.appeal {
-  text-align: center;
-  color: #333333;
-}
-
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -241,7 +245,7 @@ button {
   color: #333333;
 }
 
-.button-search-hotel {
+.search-hotel-button {
   display: block;
   width: 376px;
   margin: 0 auto;
@@ -250,11 +254,6 @@ button {
 /* SUBSCRIBE */
 .subscribe-main {
   background: #5387b4 url("../images/subscribe-background.jpg") no-repeat center center;
-}
-
-.tagline-white,
-.appeal-white {
-  color: #FFFFFF;
 }
 
 .subscribe-form {
@@ -278,6 +277,7 @@ button {
 .footer-socials-list {
   width: 142px;
 }
+
 .footer-phone {
   width: 331px;
   font-size: 40px;
@@ -299,6 +299,7 @@ button {
 }
 
 .filters-title {
+  margin: 0;
   font-size: 60px;
   line-height: 78px;
 }
@@ -421,10 +422,9 @@ button {
 }
 
 .product-cards-wrapper {
-  height: 110px;
   display: flex;
   justify-content: space-between;
-  align-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -437,8 +437,8 @@ button {
   width: 140px;
 }
 
-.button-more,
-.button-favorites {
+.product-cards-button-more,
+.product-cards-button-favorites {
   width: 140px;
 }
 
@@ -447,6 +447,7 @@ button {
 }
 
 .product-cards-rating {
+  margin: 0;
   background-color: #F2F2F2;
   color: #333333;
   text-transform: uppercase;
