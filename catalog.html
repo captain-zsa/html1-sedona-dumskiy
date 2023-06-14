@@ -14,33 +14,33 @@
         <img class="logo" src="images/logo.png" width="140" height="70" alt="Логотип City of Sedona">
       </a>
       <nav class="navigation">
-        <ul class="navigation-list clear-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-user-list clear-list">
-          <li class="navigation-user-item">
-            <button class="button navigation-user-button-search" type="button">
-              <span class="visually-hidden">Поиск</span>
-            </button>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span class="notification-badge">12</span>
-            </a>
-          </li>
-          <li class="navigation-user-item">
-            <button class="button navigation-user-button-want" type="button">Хочу сюда!</button>
-          </li>
-        </ul>
+        <div class="navigation-wrapper">
+          <ul class="navigation-list clear-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-user-list clear-list">
+            <li class="navigation-user-item">
+              <button class="button navigation-user-button-search" type="button">
+                <span class="visually-hidden">Поиск</span>
+              </button>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="notification-badge">12</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="button navigation-user-button-want" type="button">Хочу сюда!</button>
       </nav>
     </header>
     <main class="main-container main-inner">
@@ -111,15 +111,15 @@
               <legend class="filters-group-title">Стоимость, ₽:</legend>
               <ul class="filters-group-price-list clear-list">
                 <li class="filters-group-price-item">
-                  <input class="filters-group-price-input" type="number" name="price-min" placeholder="от">
+                  <input class="filters-group-price-input-min" type="number" name="price-min" placeholder="от">
                 </li>
                 <li class="filters-group-price-item">
-                  <input class="filters-group-price-input" type="number" name="price-max" placeholder="до">
+                  <input class="filters-group-price-input-max" type="number" name="price-max" placeholder="до">
                 </li>
               </ul>
             </fieldset>
             <div class="filters-buttons">
-              <button class="button filters-button-submit" type="submit">Применить</button>
+              <button class="button filters-button-submit button-blue" type="submit">Применить</button>
               <button class="button filters-button-reset button-transparent" type="reset">Сбросить</button>
             </div>
           </div>
@@ -131,28 +131,30 @@
             <h2 class="catalog-serch-result-title">Найдено гостиниц:</h2>
             <span class="catalog-serch-result-value">38</span>
           </div>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
-          <ul class="view-mode clear-list" aria-label="Изменить отображение на странице">
-            <li class="view-mode-item">
-              <a class="view-mode-btn view-mode-btn-small-card" href="#">
-                <span class="visually-hidden">Показать маленькие карточки</span>
-              </a>
-            </li>
-            <li class="view-mode-item">
-              <a class="view-mode-btn view-mode-btn-big-card" href="#">
-                <span class="visually-hidden">Показать большие карточки</span>
-              </a>
-            </li>
-            <li class="view-mode-item">
-              <a class="view-mode-btn view-btn-list" href="#">
-                <span class="visually-hidden">Показать списком</span>
-              </a>
-            </li>
-          </ul>
+          <div class="mode-wrapper">
+            <select class="mode-select" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <ul class="mode-wiew clear-list" aria-label="Изменить отображение на странице">
+              <li class="mode-wiew-item">
+                <a class="mode-wiew-btn mode-wiew-btn-small-card" href="#">
+                  <span class="visually-hidden">Показать маленькие карточки</span>
+                </a>
+              </li>
+              <li class="mode-wiew-item">
+                <a class="mode-wiew-btn mode-wiew-btn-big-card" href="#">
+                  <span class="visually-hidden">Показать большие карточки</span>
+                </a>
+              </li>
+              <li class="mode-wiew-item">
+                <a class="mode-wiew-btn mode-wiew-btn-list" href="#">
+                  <span class="visually-hidden">Показать списком</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <ul class="product-cards clear-list">
           <li class="product-cards-item">
@@ -164,10 +166,10 @@
               <span class="product-cards-housing">Гостиница</span>
               <span class="product-cards-price">От 4000 ₽</span>
               <a class="button product-cards-button-more" href="#">Подробнее</a>
-              <button class="button product-cards-button-favorites button-blue" type="button">В избранное</button>
-              <p class="product-cards-stars visually-hidden">
-                Количество звезд
-                <span class="product-cards-stars-value">4</span>
+              <button class="button product-cards-button-to-favorites button-blue" type="button">В избранное</button>
+              <p class="product-cards-stars">
+                <span class="product-cards-stars-title visually-hidden">Количество звезд</span>
+                <span class="product-cards-stars-value visually-hidden">4</span>
               </p>
               <p class="product-cards-rating">
                 Рейтинг:
@@ -184,10 +186,10 @@
               <span class="product-cards-housing">Гостиница</span>
               <span class="product-cards-price">От 5000 ₽</span>
               <a class="button product-cards-button-more" href="#">Подробнее</a>
-              <button class="button product-cards-button-favorites button-blue" type="button">В избранное</button>
-              <p class="product-cards-stars visually-hidden">
-                Количество звезд
-                <span class="product-cards-stars-value">4</span>
+              <button class="button product-cards-button-in-favorites button-blue" type="button">В избранном</button>
+              <p class="product-cards-stars">
+                <span class="product-cards-stars-title visually-hidden">Количество звезд</span>
+                <span class="product-cards-stars-value visually-hidden">4</span>
               </p>
               <p class="product-cards-rating">
                 Рейтинг:
@@ -204,10 +206,10 @@
               <span class="product-cards-housing">Гостиница</span>
               <span class="product-cards-price">От 2500 ₽</span>
               <a class="button product-cards-button-more" href="#">Подробнее</a>
-              <button class="button product-cards-button-favorites button-blue" type="button">В избранное</button>
-              <p class="product-cards-stars visually-hidden">
-                Количество звезд
-                <span class="product-cards-stars-value">3</span>
+              <button class="button product-cards-button-to-favorites button-blue" type="button">В избранное</button>
+              <p class="product-cards-stars">
+                <span class="product-cards-stars-title visually-hidden">Количество звезд</span>
+                <span class="product-cards-stars-value visually-hidden">3</span>
               </p>
               <p class="product-cards-rating">
                 Рейтинг:
@@ -224,10 +226,10 @@
               <span class="product-cards-housing">Гостиница</span>
               <span class="product-cards-price">От 1500 ₽</span>
               <a class="button product-cards-button-more" href="#">Подробнее</a>
-              <button class="button product-cards-button-favorites button-blue" type="button">В избранное</button>
-              <p class="product-cards-stars visually-hidden">
-                Количество звезд
-                <span class="product-cards-stars-value">2</span>
+              <button class="button product-cards-button-to-favorites button-blue" type="button">В избранное</button>
+              <p class="product-cards-stars">
+                <span class="product-cards-stars-title visually-hidden">Количество звезд</span>
+                <span class="product-cards-stars-value visually-hidden">2</span>
               </p>
               <p class="product-cards-rating">
                 Рейтинг:
@@ -238,7 +240,7 @@
         </ul>
         <ul class="pagination clear-list">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link pagination-link-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -250,7 +252,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <span>...</span>
+            <span class="pagination-link pagination-link-empty" >...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -259,12 +261,10 @@
       </section>
       <section class="subscribe">
         <h2 class="tagline">Подпишитесь на рассылку</h2>
-        <p class="appeal">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="appeal">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="subscribe-email">
-            <label class="visually-hidden" for="user-email">Укажите ваш e-mail</label>
-            <input id="user-email" type="email" placeholder="Ваш e-mail" required>
-          </p>
+          <label class="visually-hidden" for="user-email">Укажите ваш e-mail</label>
+          <input id="user-email" type="email" placeholder="Ваш e-mail" required>
           <button class="button subscribe-button-submit button-blue button-big" type="submit">подписаться</button>
         </form>
       </section>
