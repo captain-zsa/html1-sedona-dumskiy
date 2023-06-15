@@ -205,12 +205,12 @@ a {
   position: relative;
 }
 
-.navigation-link-current::after {
+.navigation-link:not([href])::after {
   content: "";
   position: absolute;
-  height: 4px;
+  height: 2px;
   background-color: #756257;
-  bottom: 0;
+  bottom: -1px;
   left: 16px;
   right: 16px;
 }
@@ -482,17 +482,17 @@ a {
   align-items: center;
 }
 
-.footer-socials-link-icon {
+.footer-socials-link svg {
   fill: #83B3D3;
 }
 
-.footer-socials-link-icon:hover,
-.footer-socials-link-icon:focus {
+.footer-socials-link:hover svg,
+.footer-socials-link:focus svg {
   fill: #68A2CA;
   outline: none;
 }
 
-.footer-socials-link-icon:active {
+.footer-socials-link:active svg {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -565,6 +565,14 @@ a {
   font-size: 16px;
   line-height: 21px;
   display: block;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-item:first-child .breadcrumbs-link {
@@ -712,9 +720,11 @@ a {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding: 11px 20px;
+  padding: 12px 38px 12px 18px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  appearance: none;
+  background: url("../images/icons/select-arrow.svg") no-repeat right 20px center;
 }
 
 .mode-select:hover,
@@ -840,8 +850,23 @@ a {
   background-color: #7DB54F;;
 }
 
+.product-cards-stars-wrapper {
+  padding: 10px 0;
+}
+
 .product-cards-stars {
   margin: 0;
+}
+
+.product-cards-stars-list {
+  display: flex;
+  gap: 6px;
+}
+
+.product-cards-stars-item {
+  width: 18px;
+  height: 17px;
+  background: url("../images/icons/star.svg");
 }
 
 .product-cards-rating {
@@ -863,7 +888,8 @@ a {
   order: 4;
 }
 
-.pagination-link {
+.pagination-link,
+.pagination-link-empty {
   background-color: #82B3D3;
   color: #ffffff;
   font-size: 20px;
@@ -877,23 +903,23 @@ a {
   border-radius: 4px;
 }
 
-.pagination-link:not(.pagination-link-current):not(.pagination-link-empty):hover,
-.pagination-link:not(.pagination-link-current):not(.pagination-link-empty):focus {
+.pagination-link-empty {
+  background: transparent;
+  color: #000000;
+}
+
+.pagination-link:not([href]) {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-link[href]:hover,
+.pagination-link[href]:focus {
   background-color: #68A2CA;
   border: 1px solid #82B3D3;
   padding: 11px 17px;
 }
 
-.pagination-link:not(.pagination-link-current):not(.pagination-link-empty):active {
+.pagination-link[href]:active {
   color: rgba(255, 255, 255, 0.3);
-}
-
-.pagination-link-current {
-  background-color: #F2F2F2;
-  color: #000000;
-}
-
-.pagination-link-empty {
-  background: transparent;
-  color: #000000;
 }

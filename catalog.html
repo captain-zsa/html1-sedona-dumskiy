@@ -11,7 +11,7 @@
   <div class="page-container">
     <header class="page-header">
       <a href="index.html" aria-current="page">
-        <img class="logo" src="images/logo.png" width="140" height="70" alt="Логотип City of Sedona">
+        <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип City of Sedona">
       </a>
       <nav class="navigation">
         <div class="navigation-wrapper">
@@ -51,9 +51,6 @@
             <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -170,10 +167,18 @@
               <span class="product-cards-price">От 4000 ₽</span>
               <a class="button product-cards-button-more button-brown" href="#">Подробнее</a>
               <button class="button product-cards-button-to-favorites button-blue" type="button">В избранное</button>
-              <p class="product-cards-stars">
-                <span class="product-cards-stars-title visually-hidden">Количество звезд</span>
-                <span class="product-cards-stars-value visually-hidden">4</span>
-              </p>
+              <div class="product-cards-stars-wrapper">
+                <p class="product-cards-stars visually-hidden">
+                  <span class="product-cards-stars-title">Количество звезд</span>
+                  <span class="product-cards-stars-value">4</span>
+                </p>
+                <ul class="product-cards-stars-list clear-list">
+                  <li class="product-cards-stars-item"></li>
+                  <li class="product-cards-stars-item"></li>
+                  <li class="product-cards-stars-item"></li>
+                  <li class="product-cards-stars-item"></li>
+                </ul>
+              </div>
               <p class="product-cards-rating">
                 Рейтинг:
                 <span class="product-cards-rating-value">8,5</span>
@@ -190,10 +195,18 @@
               <span class="product-cards-price">От 5000 ₽</span>
               <a class="button product-cards-button-more button-brown" href="#">Подробнее</a>
               <button class="button product-cards-button-in-favorites button-green" type="button">В избранном</button>
-              <p class="product-cards-stars">
-                <span class="product-cards-stars-title visually-hidden">Количество звезд</span>
-                <span class="product-cards-stars-value visually-hidden">4</span>
-              </p>
+              <div class="product-cards-stars-wrapper">
+                <p class="product-cards-stars visually-hidden">
+                  <span class="product-cards-stars-title">Количество звезд</span>
+                  <span class="product-cards-stars-value">4</span>
+                </p>
+                <ul class="product-cards-stars-list clear-list">
+                  <li class="product-cards-stars-item"></li>
+                  <li class="product-cards-stars-item"></li>
+                  <li class="product-cards-stars-item"></li>
+                  <li class="product-cards-stars-item"></li>
+                </ul>
+              </div>
               <p class="product-cards-rating">
                 Рейтинг:
                 <span class="product-cards-rating-value">9,2</span>
@@ -210,10 +223,17 @@
               <span class="product-cards-price">От 2500 ₽</span>
               <a class="button product-cards-button-more button-brown" href="#">Подробнее</a>
               <button class="button product-cards-button-to-favorites button-blue" type="button">В избранное</button>
-              <p class="product-cards-stars">
-                <span class="product-cards-stars-title visually-hidden">Количество звезд</span>
-                <span class="product-cards-stars-value visually-hidden">3</span>
-              </p>
+              <div class="product-cards-stars-wrapper">
+                <p class="product-cards-stars visually-hidden">
+                  <span class="product-cards-stars-title">Количество звезд</span>
+                  <span class="product-cards-stars-value">3</span>
+                </p>
+                <ul class="product-cards-stars-list clear-list">
+                  <li class="product-cards-stars-item"></li>
+                  <li class="product-cards-stars-item"></li>
+                  <li class="product-cards-stars-item"></li>
+                </ul>
+              </div>
               <p class="product-cards-rating">
                 Рейтинг:
                 <span class="product-cards-rating-value">6,9</span>
@@ -230,10 +250,16 @@
               <span class="product-cards-price">От 1500 ₽</span>
               <a class="button product-cards-button-more button-brown" href="#">Подробнее</a>
               <button class="button product-cards-button-to-favorites button-blue" type="button">В избранное</button>
-              <p class="product-cards-stars">
-                <span class="product-cards-stars-title visually-hidden">Количество звезд</span>
-                <span class="product-cards-stars-value visually-hidden">2</span>
-              </p>
+              <div class="product-cards-stars-wrapper">
+                <p class="product-cards-stars visually-hidden">
+                  <span class="product-cards-stars-title">Количество звезд</span>
+                  <span class="product-cards-stars-value">2</span>
+                </p>
+                <ul class="product-cards-stars-list clear-list">
+                  <li class="product-cards-stars-item"></li>
+                  <li class="product-cards-stars-item"></li>
+                </ul>
+              </div>
               <p class="product-cards-rating">
                 Рейтинг:
                 <span class="product-cards-rating-value">5,0</span>
@@ -243,7 +269,7 @@
         </ul>
         <ul class="pagination clear-list">
           <li class="pagination-item">
-            <a class="pagination-link pagination-link-current">1</a>
+            <a class="pagination-link">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -255,7 +281,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <span class="pagination-link pagination-link-empty" >...</span>
+            <span class="pagination-link-empty">...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
