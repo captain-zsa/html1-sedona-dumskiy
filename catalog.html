@@ -20,10 +20,10 @@
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current">Гостиницы</a>
+              <a class="navigation-link">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user-list clear-list">
@@ -115,23 +115,19 @@
           <div class="filters-groups-right">
             <fieldset class="filters-group filters-group-price">
               <legend class="filters-group-title">Стоимость, ₽:</legend>
-              <ul class="filters-group-price-list clear-list">
-                <li class="filters-group-price-item">
-                  <label class="filters-group-price-label price-label-min">
-                    <input class="filters-group-price-input" type="number" name="price-min" value="0">
-                    <span>от</span>
-                  </label>
-                </li>
-                <li class="filters-group-price-item">
-                  <label class="filters-group-price-label price-label-max">
-                    <input class="filters-group-price-input" type="number" name="price-max" value="9000">
-                    <span>до</span>
-                  </label>
-                </li>
-              </ul>
+              <div class="filters-group-price-wrapper">
+                <label class="filters-group-price-label">
+                  <input class="filters-group-price-input price-input-min" type="number" name="price-min" value="0" placeholder="от">
+                  <span>от</span>
+                </label>
+                <label class="filters-group-price-label">
+                  <input class="filters-group-price-input price-input-max" type="number" name="price-max" value="9000" placeholder="до">
+                  <span>до</span>
+                </label>
+              </div>
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 20px; width: 206px">
+                  <div class="range-bar" style="left: 20px; width: 186px">
                     <button class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
@@ -163,19 +159,19 @@
             </select>
             <ul class="mode-wiew clear-list" aria-label="Изменить отображение на странице">
               <li class="mode-wiew-item">
-                <a class="mode-wiew-btn mode-wiew-btn-small-card" href="#">
+                <button class="mode-wiew-btn mode-wiew-btn-small-card mode-wiew-btn-current">
                   <span class="visually-hidden">Показать маленькие карточки</span>
-                </a>
+                </button>
               </li>
               <li class="mode-wiew-item">
-                <a class="mode-wiew-btn mode-wiew-btn-big-card" href="#">
+                <button class="mode-wiew-btn mode-wiew-btn-big-card">
                   <span class="visually-hidden">Показать большие карточки</span>
-                </a>
+                </button>
               </li>
               <li class="mode-wiew-item">
-                <a class="mode-wiew-btn mode-wiew-btn-list" href="#">
+                <button class="mode-wiew-btn mode-wiew-btn-list">
                   <span class="visually-hidden">Показать списком</span>
-                </a>
+                </button>
               </li>
             </ul>
           </div>
