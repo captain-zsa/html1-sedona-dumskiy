@@ -429,6 +429,7 @@ a {
 
 .infrastructure-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .infrastructure-item {
@@ -908,7 +909,7 @@ a {
 .breadcrumbs-item {
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 10px;
 }
 
 .breadcrumbs-link {
@@ -928,8 +929,8 @@ a {
 
 .breadcrumbs-item:first-child .breadcrumbs-link {
   display: block;
-  min-width: 12px;
-  min-height: 12px;
+  min-width: 13px;
+  min-height: 15px;
   background: url("../images/icons/breadcrumbs-hause.svg") no-repeat center center;
 }
 
@@ -1062,6 +1063,7 @@ a {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  -moz-appearance: textfield;
 }
 
 .filters-group-price-input::placeholder {
@@ -1193,14 +1195,14 @@ a {
   order: 1;
 }
 
-.catalog-serch-result {
+.catalog-search-result {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.catalog-serch-result-title,
-.catalog-serch-result-value {
+.catalog-search-result-title,
+.catalog-search-result-value {
   margin: 0;
   font-size: 30px;
   line-height: 36px;
@@ -1243,9 +1245,11 @@ a {
 }
 
 .mode-wiew {
-  width: 160px;
+  width: 216px;
   display: flex;
-  justify-content: space-between;
+  gap: 8px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .mode-wiew-btn {
