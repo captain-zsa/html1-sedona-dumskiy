@@ -315,6 +315,7 @@ a {
   position: relative;
   padding: 51px 0 82px;
   background: #489178 url("../images/hero-background.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .hero-img {
@@ -325,6 +326,7 @@ a {
 .hero::after {
   content: "";
   background: url("../images/hero-ladder.svg") no-repeat center center;
+  background-size: cover;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -499,6 +501,7 @@ a {
 
 .subscribe-main {
   background: #5387b4 url("../images/subscribe-background.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .subscribe-form {
@@ -706,7 +709,7 @@ a {
   position: relative;
 }
 
-.modal-form-label-wrapper-long::after {
+.modal-form-label-wrapper-long .modal-form-label::after {
   content: "";
   background: url("../images/icons/calendar.svg") no-repeat center center;
   width: 20px;
@@ -714,6 +717,7 @@ a {
   position: absolute;
   top: 14px;
   right: 20px;
+  cursor: pointer;
 }
 
 .modal-form-label {
@@ -791,6 +795,7 @@ a {
   cursor: pointer;
   width: 40px;
   height: 48px;
+  background-color: #F2F2F2;
 }
 
 .modal-form-button-minus {
@@ -878,6 +883,7 @@ a {
 /* FILTERS */
 .filters {
   background: #5387b4 url("../images/filters-background.jpg") no-repeat center center;
+  background-size: cover;
   color: #ffffff;
   font-size: 18px;
   line-height: 23px;
@@ -1251,6 +1257,7 @@ a {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   outline: none;
+  cursor: pointer;
 }
 
 .mode-wiew-btn-current {
@@ -1318,12 +1325,16 @@ a {
 
 .product-cards-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 140px);
-  gap: 16px 20px;
+  row-gap: 16px;
 }
 
-.product-cards-housing,
-.product-cards-price {
+.product-cards-row-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  column-gap: 20px;
+}
+
+.product-cards-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1331,7 +1342,7 @@ a {
   text-align: left;
 }
 
-.product-cards-price {
+.product-cards-text:nth-child(2) {
   text-align: right;
 }
 
@@ -1350,23 +1361,28 @@ a {
   background-color: #7DB54F;;
 }
 
-.product-cards-stars-wrapper {
-  padding: 10px 0;
-}
-
 .product-cards-stars {
   margin: 0;
+  padding: 10px 0;
+  position: relative;
 }
 
-.product-cards-stars-list {
-  display: flex;
-  gap: 6px;
-}
-
-.product-cards-stars-item {
-  width: 18px;
+.product-cards-stars::after {
+  content: "";
+  width: 89px;
   height: 17px;
-  background: url("../images/icons/star.svg");
+  position: absolute;
+  left: 0;
+  background-image: url("../images/icons/star.svg");
+  background-repeat: space;
+}
+
+.product-cards-stars[data-stars="3"]::after {
+  width: 66px;
+}
+
+.product-cards-stars[data-stars="2"]::after {
+  width: 42px;
 }
 
 .product-cards-rating {

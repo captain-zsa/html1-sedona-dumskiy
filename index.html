@@ -120,7 +120,7 @@
         <p class="appeal appeal-white">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="user-email">Укажите ваш e-mail</label>
-          <input id="user-email" type="email" placeholder="Ваш e-mail" required>
+          <input id="user-email" type="email" name="user-email" placeholder="Ваш e-mail" required>
           <button class="button subscribe-button-submit button-blue button-big" type="submit">подписаться</button>
         </form>
       </section>
@@ -163,23 +163,23 @@
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal-form-label-wrapper modal-form-label-wrapper-long">
-            <label for="date-arrival" class="modal-form-label">Дата заезда:</label>
-            <input id="date-arrival" class="modal-form-input modal-form-input-date" type="text" name="date-arrival" value="27 апреля 2020" placeholder="Укажите дату" required>
+            <label class="modal-form-label" for="date-arrival">Дата заезда:</label>
+            <input class="modal-form-input modal-form-input-date" id="date-arrival" type="text" name="date-arrival" value="27 апреля 2020" placeholder="Укажите дату" required>
             <span class="modal-form-input-message modal-form-input-message-error">Мы не можем отправить вас в прошлое.</span>
           </div>
           <div class="modal-form-label-wrapper modal-form-label-wrapper-long">
-            <label for="date-of-departure" class="modal-form-label">Дата выезда:</label>
-            <input id="date-of-departure" class="modal-form-input modal-form-input-date" type="text" name="date-of-departure" value="1 сентября 2023" placeholder="Укажите дату" required>
+            <label class="modal-form-label" for="date-of-departure">Дата выезда:</label>
+            <input class="modal-form-input modal-form-input-date" id="date-of-departure" type="text" name="date-of-departure" value="1 сентября 2023" placeholder="Укажите дату" required>
             <span class="modal-form-input-message">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="modal-form-label-wrapper">
-            <label for="quantity-adult" class="modal-form-label">Взрослые:</label>
+            <label class="modal-form-label" for="quantity-adult">Взрослые:</label>
             <div class="modal-form-input-wrapper">
               <button class="modal-form-button modal-form-button-minus" type="button">
                 <span class="visually-hidden">Минус</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
               </button>
-              <input id="quantity-adult" class="modal-form-input modal-form-input-quantity" type="number" name="quantity-adult" value="2">
+              <input class="modal-form-input modal-form-input-quantity" id="quantity-adult" type="number" name="quantity-adult" value="2">
               <button class="modal-form-button modal-form-button-plus" type="button">
                 <span class="visually-hidden">Плюс</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
@@ -188,10 +188,10 @@
           </div>
           <div class="modal-form-label-wrapper">
             <span class="modal-form-label">
-              <label for="quantity-children" class="modal-form-label">Дети:</label>
+              <label class="modal-form-label" for="quantity-children">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                <span class="tooltip-text" id="tooltip-label-date" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
             </span>
             <div class="modal-form-input-wrapper">
@@ -199,7 +199,7 @@
                 <span class="visually-hidden">Минус</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
               </button>
-              <input id="quantity-children" class="modal-form-input modal-form-input-quantity" type="number" name="quantity-children" value="2">
+              <input class="modal-form-input modal-form-input-quantity" id="quantity-children" type="number" name="quantity-children" value="2">
               <button class="modal-form-button modal-form-button-plus" type="button">
                 <span class="visually-hidden">Плюс</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
